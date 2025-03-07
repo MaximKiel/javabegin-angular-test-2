@@ -7,9 +7,20 @@ import {Component, OnInit} from '@angular/core';
 })
 export class DataComponent implements OnInit {
 
+  name = "Test name";
+  disabled = false;
+
   constructor() {
   }
 
   ngOnInit(): void {
+    }
+
+  changeName() {
+    this.name = "New test name";
+  }
+
+  changeDisabled() {
+    this.disabled = !this.disabled;
   }
 }
