@@ -57,7 +57,7 @@ export class DataComponent implements OnInit {
         next: ((response: any) => {
 
           console.log(response);
-          console.log(response.data);
+          // console.log(response.data);
 
           this.followers = response.followers;
           this.following = response.following;
