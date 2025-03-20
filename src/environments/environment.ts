@@ -4,8 +4,12 @@
 
 export const environment = {
   production: false,
-  backendURL: "https://localhost:8080"
+  kcClientID: 'todoapp-client', // из настроек KeyCloak
+  kcBaseURL: 'https://localhost:8443/realms/todoapp-realm/protocol/openid-connect', // базовый URL KeyCloak
+  clientLoginURL: 'https://localhost:4200', // текущий frontend
+  backendURL: 'https://localhost:8901' // API Resource Server
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
