@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {HttpClient, HttpParams} from "@angular/common/http";
 import {environment} from "../../environments/environment";
-import jwt_decode from "jwt-decode";
+import {jwtDecode} from "jwt-decode";
 
 
 // отображение бизнес данных приложения
@@ -45,7 +45,7 @@ export class DataComponent implements OnInit {
 
       this.idToken = localStorage.getItem('id_token') as string;
       if (this.idToken) {
-        this.jwt = jwt_decode(this.idToken); // получаем не JSON, а сразу готовый объект, у которого можно запрашивать любые поля
+        this.jwt = jwtDecode(this.idToken); // получаем не JSON, а сразу готовый объект, у которого можно запрашивать любые поля
       }
 
 
