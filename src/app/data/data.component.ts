@@ -53,7 +53,7 @@ export class DataComponent implements OnInit {
     console.log("dataComponent - exchangeRefreshToken");
 
     // обмен RT на AT
-    this.http.get(environment.bffURI + '/newaccesstoken').subscribe(
+    this.http.get(environment.bffURI + '/exchange').subscribe(
       {
 
         // успешное выполнение
