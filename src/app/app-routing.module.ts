@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {LoginComponent} from "./login/login.component";
 import {DataComponent} from "./data/data.component";
 
-// URL mapping - в зависимости от запроса в адресной строке будем попадать в нужный компонент
+// все URL маппинги
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
